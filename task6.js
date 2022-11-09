@@ -16,3 +16,14 @@ const students = [
   "Luna Lovegood",
   "Gregory Goyle",
 ];
+
+let sortedBrooms = broomCupboard.sort((a,b) => a-b)
+console.log(sortedBrooms)
+
+let sortedPotions = potions.sort((a, b) => b.shelf-a.shelf)
+console.log(sortedPotions)
+
+let sortedStudents = students.sort((a,b) => a.split(' ')[1].localeCompare(b.split(' ')[1]))
+console.log(sortedStudents)
+console.log(students[0].split(' ')[1].localeCompare(students[1].split(' ')[1]))
+
